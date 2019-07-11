@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <JFXTextField fx:id="jtf_userName" alignment="CENTER" layoutX="63.0" layoutY="99.0" prefHeight="39.0" prefWidth="296.0" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <Label layoutX="112.0" text="Đăng nhập">
+         <font>
+            <Font name="SansSerif Regular" size="36.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="jpf_passWord" alignment="CENTER" layoutX="63.0" layoutY="162.0" onKeyPressed="#_enterLogin" prefHeight="39.0" prefWidth="296.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font></JFXPasswordField>
+      <HBox layoutX="-2.0" layoutY="240.0" prefHeight="60.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="240.0">
+         <children>
+            <JFXButton fx:id="btn_Login" onAction="#_login" prefHeight="70.0" prefWidth="234.0" stylesheets="@LoginColorPicker.css" text="Login" textFill="WHITE" />
+            <JFXButton fx:id="btn_cancel" onAction="#_cancel" prefHeight="70.0" prefWidth="231.0" stylesheets="@LoginColorPicker.css" text="Cancel" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

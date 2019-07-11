@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CoffeeShop.jnlp">
+  <information>
+    <title>CoffeeShop</title>
+    <vendor>PC</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CoffeeShop.jar" size="119239" download="eager" />
+    <jar href="lib\jasperreports-5.5.0.jar" size="4662562" download="eager" />
+    <jar href="lib\jasperreports-applet-5.5.0.jar" size="522712" download="eager" />
+    <jar href="lib\jasperreports-fonts-5.5.0.jar" size="4957392" download="eager" />
+    <jar href="lib\jasperreports-functions-5.5.0.jar" size="30982" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\sqljdbc42.jar" size="898868" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="main.LoaderMain"  name="CoffeeShop" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="602.0" prefWidth="1323.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.admin.AdminWorkSpaceController">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="204.0" style="-fx-background-color: #1A237E;">
+         <children>
+            <Pane prefHeight="121.0" prefWidth="159.0">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="53.0" layoutX="6.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/java_coffee_cup_logo_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="59.0" layoutY="52.0" text="My Coffee Shop" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Button fx:id="btn_quanLyNhanSu" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btn_quanLyNhanSu" prefHeight="76.0" prefWidth="227.0" stylesheets="@AdminWorkSpaceColorPicker.css" text="Quản lý nhân sự" textFill="#eeeaea">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/employee_card_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_QLhoaDon" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#_QLHOADON" prefHeight="76.0" prefWidth="232.0" stylesheets="@AdminWorkSpaceColorPicker.css" text="Quản lý hóa đơn" textFill="#eeeaea">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/bill_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_quanLyThucDon" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#_quanLyThucDon" prefHeight="76.0" prefWidth="229.0" stylesheets="@AdminWorkSpaceColorPicker.css" text="Quản lý thực đơn" textFill="#eeeaea">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/top_menu_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_doanhThu" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#_doanhThu" prefHeight="76.0" prefWidth="220.0" stylesheets="@AdminWorkSpaceColorPicker.css" text="Doanh thu" textFill="#eeeaea">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/money_bag_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_doiMatKhau" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#_doiMatKhau" prefHeight="76.0" prefWidth="270.0" stylesheets="@AdminWorkSpaceColorPicker.css" text="Đổi mật khẩu" textFill="#eeeaea">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/password_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_dangXuat" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#_dangXuat" prefHeight="76.0" prefWidth="230.0" stylesheets="@AdminWorkSpaceColorPicker.css" text="Đăng xuất" textFill="#eeeaea">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/exit_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="pane" layoutX="236.0" layoutY="-1.0" prefHeight="600.0" prefWidth="1080.0" />
+   </children>
+</AnchorPane>
